@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Clone</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f2f4f5;
+        }
+
+        .navbar{
+            background:white;
+            padding:15px 40px;
+            display:flex;
+            align-items:center;
+            gap:15px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo{
+            font-size:40px;
+            font-weight:bold;
+        }
+
+        .location{
+            width:250px;
+            padding:10px;
+        }
+
+        .search{
+            flex:1;
+            padding:10px;
+        }
+
+        .search-btn{
+            padding:10px 20px;
+            background:black;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        .login{
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .sell{
+            padding:10px 20px;
+            border:3px solid #23e5db;
+            border-radius:30px;
+            background:white;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .categories{
+            background:white;
+            padding:15px 40px;
+            display:flex;
+            gap:25px;
+            font-weight:bold;
+        }
+
+        .banner img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .section{
+            padding:30px 40px;
+        }
+
+        .section h2{
+            margin-bottom:20px;
+        }
+
+        .cards{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:220px;
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:15px;
+        }
+
+        .price{
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .footer{
+            background:#002f34;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">OLX</div>
+
+        <select class="location">
+            <option>Pakistan</option>
+            <option>Karachi</option>
+            <option>Lahore</option>
+            <option>Islamabad</option>
+        </select>
+
+        <input type="text" class="search" placeholder="Find Cars, Mobile Phones and more...">
+
+        <button class="search-btn">Search</button>
+
+        <div class="login">Login</div>
+
+        <button class="sell">+ SELL</button>
+    </div>
+
+    <div class="categories">
+        <div>Mobile Phones</div>
+        <div>Cars</div>
+        <div>Motorcycles</div>
+        <div>Houses</div>
+        <div>Tablets</div>
+        <div>Land & Plots</div>
+    </div>
+
+    <div class="banner">
+        <img src="https://images.olx.com.pk/thumbnails/banner.jpg" alt="Banner">
+    </div>
+
+    <div class="section">
+        <h2>Fresh Recommendations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+                <div class="card-content">
+                    <div class="price">Rs 250,000</div>
+                    <p>iPhone 15 Pro Max</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+                <div class="card-content">
+                    <div class="price">Rs 3,500,000</div>
+                    <p>Toyota Corolla</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+                <div class="card-content">
+                    <div class="price">Rs 15,000,000</div>
+                    <p>5 Marla House</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+                <div class="card-content">
+                    <div class="price">Rs 80,000</div>
+                    <p>Samsung Tablet</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 OLX Clone - Assignment 9
+    </div>
+
+</body>
+</html>
